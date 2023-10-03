@@ -2,7 +2,7 @@
 [![Build Status](https://beckshome.visualstudio.com/dotnet-blazor-base/_apis/build/status/thbst16.dotnet-blazor-base?branchName=main)](https://beckshome.visualstudio.com/dotnet-blazor-base/_build/latest?definitionId=12&branchName=main)
 ![Docker Image Version (latest by date)](https://img.shields.io/docker/v/thbst16/dotnet-blazor-base?logo=docker)
 
-The base MudBlazor server-rendered project from which all other beckshome blazor projects are derived. This project includes a basic MudBlazor application generated using MudBlazor.Templates. The application is dockerized and deployed...
+This is the base MudBlazor server-rendered project from which all other beckshome blazor projects are derived. This project includes a basic MudBlazor application generated using MudBlazor.Templates. The application is dockerized and deployed onto Azure Container Apps using Azure DevOps. 
 
 * docker build -t blazor-base -f Dockerfile .
 * docker run -d -p 5001:80 blazor-base
