@@ -36,10 +36,10 @@ stages:
   - job: Deploy
     displayName: Deploy the container to Azure Container
     steps:
-  - task: AzureContainerApps@1
-    displayName: Deploy the docker image
-    inputs:
-      azureSubscription: becksAzureRM
-      containerAppName: dotnet-blazor-base
-      resourceGroup: beckshome-container-apps-rg
-      imageToDeploy: thbst16/dotnet-blazor-base
+    - task: AzureContainerApps@1
+      displayName: Deploy the docker image
+      inputs:
+        azureSubscription: becksAzureRM
+        containerAppName: dotnet-blazor-base
+        resourceGroup: beckshome-container-apps-rg
+        imageToDeploy: thbst16/dotnet-blazor-base
