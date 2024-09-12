@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # build and put files in a folder called output
-RUN dotnet publish -c Release -o output
+RUN dotnet publish dotnet-blazor-base.sln -c Release -o output
 
 # Build runtime image. Note use of runtime version of core image to reduce size of final image
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime-env
