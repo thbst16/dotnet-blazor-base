@@ -7,6 +7,8 @@ This is the base MudBlazor server-rendered project from which all other beckshom
 # Notional Architecture
 The key focus of this project, beyond the standard MudBlazor application, is the dockerizing process and deployment of the dockerized application to Azure Container Apps using Azure DevOps. The figure below represents these critical steps, highlighting the artifacts in this project responsible for each of these key activities.
 
+![Blazor Deployment](https://s3.amazonaws.com/s3.beckshome.com/20240913-blazor-deployment.jpeg)
+
 * docker build -t blazor-base -f Dockerfile .
 * docker run -d -p 5001:80 blazor-base
 * docker ps
