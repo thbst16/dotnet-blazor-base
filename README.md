@@ -17,7 +17,7 @@ docker build -t blazor-base -f Dockerfile .
 docker run -d -p 5001:80 blazor-base
 ```
 
-To run directly from dockerhub:
+To run directly from DockerHub:
 
 ```console
 docker run -d -p 5001:80 thbst16/blazor-base
