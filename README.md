@@ -9,12 +9,26 @@ The key focus of this project, beyond the standard MudBlazor application, is the
 
 ![Blazor Deployment](https://s3.amazonaws.com/s3.beckshome.com/20240913-blazor-deployment.jpeg)
 
-* docker build -t blazor-base -f Dockerfile .
-* docker run -d -p 5001:80 blazor-base
-* docker ps
-* docker kill CONTAINER_NAME
+# Running the Application
+Ther are several ways to run the application. It is available [directly online](https://dotnet-blazor-base.calmmushroom-9daa5362.eastus.azurecontainerapps.io/). Alternately, you can build and run the docker instance locally or run the docker instance from the DockerHub repo. To build and run the Docker instance locally: 
 
-https://dotnet-blazor-base.calmmushroom-9daa5362.eastus.azurecontainerapps.io/
+```console
+docker build -t blazor-base -f Dockerfile .
+docker run -d -p 5001:80 blazor-base
+```
+
+To run directly from dockerhub:
+
+```console
+docker run -d -p 5001:80 thbst16/blazor-base
+```
+
+Either way, to kill the container when you're done:
+
+```console
+docker ps
+docker kill CONTAINER_NAME
+```
 
 # Motivation and Credits
 * [.NET on Azure Container Apps Overview](https://learn.microsoft.com/en-us/azure/container-apps/dotnet-overview)
