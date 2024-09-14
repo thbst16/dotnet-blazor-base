@@ -10,7 +10,7 @@ The key focus of this project, beyond the standard MudBlazor application, is the
 ![Blazor Deployment](https://s3.amazonaws.com/s3.beckshome.com/20240913-blazor-deployment.jpeg)
 
 # Running the Application
-Ther are several ways to run the application. It is available [directly online](https://dotnet-blazor-base.calmmushroom-9daa5362.eastus.azurecontainerapps.io/). Alternately, you can build and run the docker instance locally or run the docker instance from the DockerHub repo. To build and run the Docker instance locally: 
+Ther are several ways to run the application. It is available [directly online](https://dotnet-blazor-base.wittycoast-850643a6.eastus.azurecontainerapps.io/). Alternately, you can build and run the docker instance locally or run the docker instance from the DockerHub repo. To build and run the Docker instance locally: 
 
 ```console
 docker build -t blazor-base -f Dockerfile .
